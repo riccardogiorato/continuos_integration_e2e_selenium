@@ -11,10 +11,6 @@ jobs:
 before_install:
   - npm run installglobal
 addons:
-  apt:
-    sources:
-      - google-chrome
-    packages:
-      - google-chrome-stable
+  chrome: stable
 before_script:
   - sh -e /etc/init.d/xvfb start
