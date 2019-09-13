@@ -1,0 +1,256 @@
+{
+  "id": "39171680-1dc1-4fed-bd16-7da5e466ea73",
+  "version": "2.0",
+  "name": "google",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "a495c68a-2be3-48c0-bc86-d759b5aba560",
+    "name": "simple_search",
+    "commands": [{
+      "id": "9bfb22b1-1564-4e6d-9d7f-96eb23d61658",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fae2c935-503c-4fb8-8c9a-8a36e3bf69d6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6db5c3c-3ab7-46b4-9ee8-4bd4d0bc404d",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "testing search"
+    }, {
+      "id": "45c85a80-62ce-4ac7-9fb5-c4cdbce1a918",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "848e9ec9-432e-426d-850c-b9e745b62584",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Immagini",
+      "targets": [
+        ["linkText=Immagini", "linkText"],
+        ["css=.hdtb-mitem:nth-child(2) > .q", "css:finder"],
+        ["xpath=//a[contains(text(),'Immagini')]", "xpath:link"],
+        ["xpath=//div[@id='hdtb-msb-vis']/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?q=testing+search&sxsrf=ACYBGNT_5M3G0LuinYAwCIDoSykg0wKNAg:1568373974500&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjm0f-s2M3kAhUICuwKHdxNBDEQ_AUIESgB')]", "xpath:href"],
+        ["xpath=//div/div/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Immagini')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d371817c-9728-4fe1-8377-b85c664f82b4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Notizie",
+      "targets": [
+        ["linkText=Notizie", "linkText"],
+        ["css=.hdtb-mitem:nth-child(4) > .q", "css:finder"],
+        ["xpath=//a[contains(text(),'Notizie')]", "xpath:link"],
+        ["xpath=//div[@id='hdtb-msb-vis']/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?q=testing+search&bih=722&biw=1039&hl=it&tbm=nws&sxsrf=ACYBGNTjI9zTRoLxXnhh1o71KzVRvi-NxQ:1568373977567&source=lnms&sa=X&ved=0ahUKEwiG8bqu2M3kAhX_wAIHHRGbBycQ_AUIDCgD')]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Notizie')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f679146-5d94-4622-a7de-9a99219b1429",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Shopping",
+      "targets": [
+        ["linkText=Shopping", "linkText"],
+        ["css=.hdtb-mitem:nth-child(5) > .q", "css:finder"],
+        ["xpath=//a[contains(text(),'Shopping')]", "xpath:link"],
+        ["xpath=//div[@id='hdtb-msb-vis']/div[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?q=testing+search&hl=it&biw=1039&bih=722&tbm=shop&sxsrf=ACYBGNSwUt1rgcH1d9MMDfs7qVQ1_kUyRg:1568373979119&source=lnms&sa=X&ved=0ahUKEwjvzpmv2M3kAhXPyKQKHeyMAC4Q_AUIDSgE')]", "xpath:href"],
+        ["xpath=//div[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0445b2ec-d058-4860-9e99-8742d5de88cb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tutti",
+      "targets": [
+        ["linkText=Tutti", "linkText"],
+        ["css=.hdtb-mitem:nth-child(1) > .q", "css:finder"],
+        ["xpath=//a[contains(text(),'Tutti')]", "xpath:link"],
+        ["xpath=//div[@id='hdtb-msb-vis']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?q=testing+search&hl=it&biw=1039&bih=722&sxsrf=ACYBGNSKp1OZaFCk6haFqBRPQEJNiQOdvQ:1568373980569&source=lnms&sa=X&ved=0ahUKEwiOkvKv2M3kAhWJy6QKHZuaCfUQ_AUITigA')]", "xpath:href"],
+        ["xpath=//div[5]/div/div/div/div/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "71e3975d-6eaa-467f-b7cc-76bea247ee5d",
+    "name": "i_feel_lucky",
+    "commands": [{
+      "id": "eb9076a9-9291-4793-9772-563eb6e1f6ba",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a128b51-dcfa-454b-af9e-544a7eb9ab00",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1058x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5891f809-f4e7-4bec-98e3-35840f8437af",
+      "comment": "",
+      "command": "click",
+      "target": "css=center:nth-child(1) > .RNmpXc",
+      "targets": [
+        ["css=center:nth-child(1) > .RNmpXc", "css:finder"],
+        ["xpath=(//input[@name='btnI'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div[3]/center/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/center/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5515b12e-699d-45cf-bae1-356492c356ca",
+      "comment": "",
+      "command": "click",
+      "target": "id=logo",
+      "targets": [
+        ["id=logo", "id"],
+        ["css=#logo", "css:finder"],
+        ["xpath=//a[@id='logo']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-wrap']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/doodles')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4174e83-8164-4d82-ba26-54878597ade6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2899ab02-1549-4e74-a46f-d657835d46f9",
+    "name": "start_from_search",
+    "commands": [{
+      "id": "30a6c9df-a92c-416e-99d9-d29fbdd77f36",
+      "comment": "",
+      "command": "open",
+      "target": "/search?sxsrf=ACYBGNS7HG4zKsA80naAg9O2pvStvZxDBg%3A1568374073922&source=hp&ei=OX17XZ7ANcS8kwXThrDIAg&q=test&oq=test&gs_l=psy-ab.3..0i131j0j0i131j0l3j0i3j0l3.2361.3172..3432...0.0..0.79.292.4......0....1..gws-wiz.-_1bRWD2TPY&ved=0ahUKEwjewLHc2M3kAhVE3qQKHVMDDCkQ4dUDCAU&uact=5",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0be299fa-c782-4092-9415-34493b986159",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Video",
+      "targets": [
+        ["linkText=Video", "linkText"],
+        ["css=.hdtb-mitem:nth-child(2) > .q", "css:finder"],
+        ["xpath=//a[contains(text(),'Video')]", "xpath:link"],
+        ["xpath=//div[@id='hdtb-msb-vis']/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?q=test&sxsrf=ACYBGNQMFLRRUPxT3ztT6PtvH3JKAsvCUw:1568374122086&source=lnms&tbm=vid&sa=X&ved=0ahUKEwiR0q_z2M3kAhWmsaQKHbePCzUQ_AUIEigB')]", "xpath:href"],
+        ["xpath=//div/div/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Video')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "23f48f25-2bc8-44b1-bffb-a9f9cbb650da",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Immagini",
+      "targets": [
+        ["linkText=Immagini", "linkText"],
+        ["css=.hdtb-mitem:nth-child(3) > .q", "css:finder"],
+        ["xpath=//a[contains(text(),'Immagini')]", "xpath:link"],
+        ["xpath=//div[@id='hdtb-msb-vis']/div[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?q=test&biw=1043&bih=722&tbm=isch&sxsrf=ACYBGNSXOacioqdkcWCDvvAn-KWTzBoJGA:1568374127967&source=lnms&sa=X&ved=0ahUKEwibwJb22M3kAhXCzqQKHVyEAEQQ_AUICygC')]", "xpath:href"],
+        ["xpath=//div[5]/div/div/div/div/div/div/div/div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Immagini')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e005d8d-35c9-4a24-80ea-a76fa9d083cd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Notizie",
+      "targets": [
+        ["linkText=Notizie", "linkText"],
+        ["css=.NZmxZe:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Notizie')]", "xpath:link"],
+        ["xpath=//body[@id='yDmH0d']/div[2]/c-wiz/div/div/div/div/div/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?q=test&source=lmns&tbm=nws&bih=722&biw=1043&hl=it&ved=2ahUKEwihrfr22M3kAhVFLxoKHccVCVUQ_AUoA3oECAEQAw')]", "xpath:href"],
+        ["xpath=//c-wiz/div/div/div/div/div/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Notizie')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b29c0055-af39-49b9-8529-8b0010e86662",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hdtb-mitem:nth-child(5) svg",
+      "targets": [
+        ["css=.hdtb-mitem:nth-child(5) svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "753a7f8b-1229-49c3-8f0c-ac688bf890d9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tutti",
+      "targets": [
+        ["linkText=Tutti", "linkText"],
+        ["css=.hdtb-mitem:nth-child(1) > .q", "css:finder"],
+        ["xpath=//a[contains(text(),'Tutti')]", "xpath:link"],
+        ["xpath=//div[@id='hdtb-msb-vis']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?q=test&bih=722&biw=1043&hl=it&sxsrf=ACYBGNSgqgo-0Ot03vSCh9uJz7uyb9V6dg:1568374131031&source=lnms&sa=X&ved=0ahUKEwjKxtH32M3kAhXJCewKHWsNA0MQ_AUICSgA')]", "xpath:href"],
+        ["xpath=//div[5]/div/div/div/div/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "267aaecc-9240-4247-adba-e3eaa590e129",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c424e089-76eb-46bf-8ff0-802c6a639c79",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a495c68a-2be3-48c0-bc86-d759b5aba560", "71e3975d-6eaa-467f-b7cc-76bea247ee5d", "2899ab02-1549-4e74-a46f-d657835d46f9"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}

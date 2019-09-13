@@ -1,0 +1,27 @@
+{
+  "name": "continuos_integration_e2e_selenium",
+  "version": "1.0.0",
+  "description": "testing out end-to-end testing with selenium ide with Continuos Integration",
+  "main": "index.js",
+  "scripts": {
+    "installglobal": "npm install -g selenium-side-runner chromedriver",
+    "test_google": "selenium-side-runner e2e_tests/google.side"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Giorat/continuos_integration_e2e_selenium.git"
+  },
+  "keywords": [
+    "selenium",
+    "selenium-ide",
+    "e2e",
+    "end-to-end",
+    "testing"
+  ],
+  "author": "@riccardogiorato",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Giorat/continuos_integration_e2e_selenium/issues"
+  },
+  "homepage": "https://github.com/Giorat/continuos_integration_e2e_selenium#readme"
+}
