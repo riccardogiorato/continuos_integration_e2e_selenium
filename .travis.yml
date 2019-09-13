@@ -1,13 +1,13 @@
 os: linux
-sudo: required
 language: node_js
-node_js:
-- 10
+node_js: '10'
+sudo: required
+env: DISPLAY=':99.0'
 dist: trusty
 jobs:
   include:
- - stage: test google
-    script: npm run test_google
+    - stage: test google
+      script: npm run test_google
 before_install:
   - npm run installglobal
 addons:
@@ -16,5 +16,5 @@ addons:
       - google-chrome
     packages:
       - google-chrome-stable
-env:
-  global:
+before_script:
+  - sh -e /etc/init.d/xvfb start
