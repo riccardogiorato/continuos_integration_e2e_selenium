@@ -14,4 +14,4 @@ addons:
   chrome: stable
 before_script:
   - sh -e /etc/init.d/xvfb start
-  - webdriver-manager update --versions.chrome 76
+  - webdriver-manager update --versions.chrome 76.0.3809.12
