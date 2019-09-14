@@ -4,7 +4,7 @@
   "description": "testing out end-to-end testing with selenium ide with Continuos Integration",
   "main": "index.js",
   "scripts": {
-    "installglobal": "npm install -g selenium-side-runner chromedriver@76.0.0 webdriver-manager",
+    "installglobal": "npm install -g selenium-side-runner chromedriver@75.0.1 webdriver-manager",
     "test_google": "selenium-side-runner e2e_tests/google.side"
   },
   "repository": {
