@@ -21,3 +21,4 @@ before_script:
   - sleep 3
   - google-chrome --product-version
   - webdriver-manager update --versions.chrome 77.0.3865.40
+  - export PATH=/home/travis/.nvm/versions/node/v10.16.3/lib/node_modules/webdriver-manager/selenium/chromedriver_77.0.3865.40:$PATH
