@@ -8,11 +8,10 @@ jobs:
     - stage: test google
       script: npm run test_google
 before_install:
+  - sudo apt-get install -y libxml2-dev
+  - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  - sudo dpkg -i google-chrome-stable_current_amd64.deb
   - npm run installglobal
-addons:
-  apt:
-    packages:
-      - google-chrome-stable
 before_script:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start &
