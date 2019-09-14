@@ -11,7 +11,7 @@ jobs:
 before_install:
   - npm run installglobal
 addons:
-  chrome: stable
+  chrome: beta
 before_script:
   - sh -e /etc/init.d/xvfb start
   - google-chrome --product-version
