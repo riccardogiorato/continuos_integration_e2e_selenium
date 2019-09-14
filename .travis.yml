@@ -10,7 +10,8 @@ jobs:
       script: npm run test_google
 before_install:
   - npm run installglobal
+addons:
+  chrome: stable
 before_script:
   - sh -e /etc/init.d/xvfb start
-  - webdriver-manager update --versions.chrome 76.0.3809.12
   - google-chrome --product-version
