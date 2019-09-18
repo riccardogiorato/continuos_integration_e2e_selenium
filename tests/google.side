@@ -75,7 +75,7 @@
       "id": "5891f809-f4e7-4bec-98e3-35840f8437af",
       "comment": "",
       "command": "click",
-      "target": "css=center:nth-child(1) > .RNmpXc",
+      "target": "xpath=(//input[@name='btnI'])[2]",
       "targets": [
         ["css=center:nth-child(1) > .RNmpXc", "css:finder"],
         ["xpath=(//input[@name='btnI'])[2]", "xpath:attributes"],
