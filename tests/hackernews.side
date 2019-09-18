@@ -1,0 +1,176 @@
+{
+  "id": "8dccf57f-18bd-4786-94b9-ef95640abdd7",
+  "version": "2.0",
+  "name": "hackernews",
+  "url": "https://news.ycombinator.com",
+  "tests": [{
+    "id": "4b02640c-60ed-44e2-b5bc-ab6b836f4f8c",
+    "name": "main_links",
+    "commands": [{
+      "id": "c464c896-cad5-4cc8-8488-f36cc3e62f2b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07a2d40a-286b-4f6d-b027-82013821a451",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "960x982",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8af40628-64a9-46eb-81e4-2e8f107b3f33",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=new",
+      "targets": [
+        ["linkText=new", "linkText"],
+        ["css=.pagetop > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'new')]", "xpath:link"],
+        ["xpath=//table[@id='hnmain']/tbody/tr/td/table/tbody/tr/td[2]/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'newest')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'new')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "584855a1-abb2-4c2f-9237-d8a346e655f9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=past",
+      "targets": [
+        ["linkText=past", "linkText"],
+        ["css=.pagetop > a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'past')]", "xpath:link"],
+        ["xpath=//table[@id='hnmain']/tbody/tr/td/table/tbody/tr/td[2]/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'front')]", "xpath:href"],
+        ["xpath=//td[2]/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'past')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c73b539-c609-4160-8026-6af68f7326c3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=comments",
+      "targets": [
+        ["linkText=comments", "linkText"],
+        ["css=.pagetop > a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'comments')]", "xpath:link"],
+        ["xpath=//table[@id='hnmain']/tbody/tr/td/table/tbody/tr/td[2]/span/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'newcomments')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'comments')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af6cf023-9f16-416f-be70-91dc49650d18",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ask",
+      "targets": [
+        ["linkText=ask", "linkText"],
+        ["css=.pagetop > a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'ask')]", "xpath:link"],
+        ["xpath=//table[@id='hnmain']/tbody/tr/td/table/tbody/tr/td[2]/span/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'ask')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'ask')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e0cbd4c-a212-4c79-96cc-036c9528182d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=show",
+      "targets": [
+        ["linkText=show", "linkText"],
+        ["css=.pagetop > a:nth-child(6)", "css:finder"],
+        ["xpath=//a[contains(text(),'show')]", "xpath:link"],
+        ["xpath=//table[@id='hnmain']/tbody/tr/td/table/tbody/tr/td[2]/span/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'show')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'show')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "66ac76d1-456b-4e54-a31d-8330e0b0e1bc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=jobs",
+      "targets": [
+        ["linkText=jobs", "linkText"],
+        ["css=.pagetop > a:nth-child(7)", "css:finder"],
+        ["xpath=//a[contains(text(),'jobs')]", "xpath:link"],
+        ["xpath=//table[@id='hnmain']/tbody/tr/td/table/tbody/tr/td[2]/span/a[5]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'jobs')]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'jobs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f6f4718-ef23-4380-8a6a-7171efcf18c2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef135ce1-f4cc-4a26-83c3-c1c3415f5ede",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=login",
+      "targets": [
+        ["linkText=login", "linkText"],
+        ["css=.pagetop > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'login')]", "xpath:link"],
+        ["xpath=//table[@id='hnmain']/tbody/tr/td/table/tbody/tr/td[3]/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'login?goto=jobs')]", "xpath:href"],
+        ["xpath=//td[3]/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ef1fcdc-fda0-49c0-a993-b05cd87c133f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f30e0970-2f78-4ece-a892-752a5bf49267",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=new",
+      "targets": [
+        ["linkText=new", "linkText"],
+        ["css=.pagetop > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'new')]", "xpath:link"],
+        ["xpath=//table[@id='hnmain']/tbody/tr/td/table/tbody/tr/td[2]/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'newest')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'new')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e23c8285-f0bf-47b1-980d-d1cf986a1cdd",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1d486e6d-3f46-42b3-97ac-98fac7e7b3fe",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4b02640c-60ed-44e2-b5bc-ab6b836f4f8c"]
+  }],
+  "urls": ["https://news.ycombinator.com/"],
+  "plugins": []
+}

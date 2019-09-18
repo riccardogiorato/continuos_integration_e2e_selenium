@@ -1,0 +1,255 @@
+{
+  "id": "db0d36f5-f1b8-49ba-a7b6-b40a74abcf52",
+  "version": "2.0",
+  "name": "blog.riccardogiorato.com",
+  "url": "https://blog.riccardogiorato.com",
+  "tests": [{
+    "id": "0ee71d73-c3fa-434b-8d66-43a98ea63980",
+    "name": "top_links",
+    "commands": [{
+      "id": "3ff77f3f-31b6-4555-9d27-691ca0121ad4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09e8891c-ec3d-4a54-a86a-7c9b9fedbf90",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "960x982",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e464095-aa07-4130-80b6-54543422e5e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul:nth-child(1) > li:nth-child(1) > a",
+      "targets": [
+        ["css=ul:nth-child(1) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'articles')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64670238-37da-41e3-ad06-d0cdbc74887e",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul:nth-child(1) > li:nth-child(2) > a",
+      "targets": [
+        ["css=ul:nth-child(1) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'2017 review')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/2017-year-review/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "166f79cd-947f-4e4b-8b12-b06bc03d789c",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul:nth-child(1) > li:nth-child(3) > a",
+      "targets": [
+        ["css=ul:nth-child(1) > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'search')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/search.html')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88082a81-f935-47b0-b7ec-f9717bad8093",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) > a",
+      "targets": [
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'2017 review')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/2017-year-review/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1abdcd5-ee60-4339-af96-a45675591a7a",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul:nth-child(1) > li:nth-child(1) > a",
+      "targets": [
+        ["css=ul:nth-child(1) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'articles')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e13a80e-d860-4d09-938b-37232d5f57ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g-logo > a",
+      "targets": [
+        ["css=.g-logo > a", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://riccardogiorato.com')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be5bf162-0c6e-49b9-bb36-2ff487227cb8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=BLOG",
+      "targets": [
+        ["linkText=BLOG", "linkText"],
+        ["css=.link:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'BLOG')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://blog.riccardogiorato.com')]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'BLOG')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2eb7b208-b969-4ebd-9494-144206ef997b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "32fdf2c5-56f9-48d6-974b-e05dae960b66",
+    "name": "read_first_article",
+    "commands": [{
+      "id": "b5eb274d-6556-4a67-8f42-3f1148a34a35",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab6c4a22-cab2-4db7-a041-c643e44f14b0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "960x982",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f89b88ae-17ea-4878-bee6-8055413743ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.article-item:nth-child(1) img",
+      "targets": [
+        ["css=.article-item:nth-child(1) img", "css:finder"],
+        ["xpath=//img[@alt='cover image for Getting ready for 2019 and the past year article']", "xpath:img"],
+        ["xpath=//div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2be2d9a8-e965-4b01-be4a-845ac471aedf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.read-next-link",
+      "targets": [
+        ["css=.read-next-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/new_pc_first_built/')]", "xpath:href"],
+        ["xpath=//section[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a257164-567d-4436-b917-0c9b8ac96f84",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ec612ce0-8f43-46a6-a956-b5427b5bbda9",
+    "name": "pagination",
+    "commands": [{
+      "id": "d4970dcc-ed7d-4845-a2ed-08d68a4b0e1f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f37a4934-26f8-4806-bf1c-4d3b23eef994",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "960x982",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab4059cd-79de-463a-a637-253bb7d8a10a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=»",
+      "targets": [
+        ["linkText=»", "linkText"],
+        ["css=.page-link", "css:finder"],
+        ["xpath=//a[contains(text(),'»')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/page2/')]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'»')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a5ea839-19c6-48ae-99c4-94b33504bc17",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=»",
+      "targets": [
+        ["linkText=»", "linkText"],
+        ["css=.page-link:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'»')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/page3/')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'»')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc741364-8383-446d-8ef1-8549e54636cb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=«",
+      "targets": [
+        ["linkText=«", "linkText"],
+        ["css=.page-link:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'«')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/page2/')]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'«')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ab8ae60-492f-4062-b3e2-482ba3baf494",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=«",
+      "targets": [
+        ["linkText=«", "linkText"],
+        ["css=.page-link:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'«')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[11]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'«')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ab3a14d-f436-4cb8-baf1-f7df053fd116",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0b412387-c322-438b-adf5-aa26fbab6d15",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0ee71d73-c3fa-434b-8d66-43a98ea63980", "32fdf2c5-56f9-48d6-974b-e05dae960b66", "ec612ce0-8f43-46a6-a956-b5427b5bbda9"]
+  }],
+  "urls": ["https://blog.riccardogiorato.com/"],
+  "plugins": []
+}

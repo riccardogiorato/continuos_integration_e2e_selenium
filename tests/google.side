@@ -47,62 +47,11 @@
       ],
       "value": "${KEY_ENTER}"
     }, {
-      "id": "848e9ec9-432e-426d-850c-b9e745b62584",
+      "id": "faa6b572-3661-4515-977b-77ea419c9bb2",
       "comment": "",
-      "command": "click",
-      "target": "linkText=Immagini",
-      "targets": [
-        ["linkText=Immagini", "linkText"],
-        ["css=.hdtb-mitem:nth-child(2) > .q", "css:finder"],
-        ["xpath=//a[contains(text(),'Immagini')]", "xpath:link"],
-        ["xpath=//div[@id='hdtb-msb-vis']/div[2]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/search?q=testing+search&sxsrf=ACYBGNT_5M3G0LuinYAwCIDoSykg0wKNAg:1568373974500&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjm0f-s2M3kAhUICuwKHdxNBDEQ_AUIESgB')]", "xpath:href"],
-        ["xpath=//div/div/div/div/div[2]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Immagini')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "d371817c-9728-4fe1-8377-b85c664f82b4",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Notizie",
-      "targets": [
-        ["linkText=Notizie", "linkText"],
-        ["css=.hdtb-mitem:nth-child(4) > .q", "css:finder"],
-        ["xpath=//a[contains(text(),'Notizie')]", "xpath:link"],
-        ["xpath=//div[@id='hdtb-msb-vis']/div[4]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/search?q=testing+search&bih=722&biw=1039&hl=it&tbm=nws&sxsrf=ACYBGNTjI9zTRoLxXnhh1o71KzVRvi-NxQ:1568373977567&source=lnms&sa=X&ved=0ahUKEwiG8bqu2M3kAhX_wAIHHRGbBycQ_AUIDCgD')]", "xpath:href"],
-        ["xpath=//div[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Notizie')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "0f679146-5d94-4622-a7de-9a99219b1429",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Shopping",
-      "targets": [
-        ["linkText=Shopping", "linkText"],
-        ["css=.hdtb-mitem:nth-child(5) > .q", "css:finder"],
-        ["xpath=//a[contains(text(),'Shopping')]", "xpath:link"],
-        ["xpath=//div[@id='hdtb-msb-vis']/div[5]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/search?q=testing+search&hl=it&biw=1039&bih=722&tbm=shop&sxsrf=ACYBGNSwUt1rgcH1d9MMDfs7qVQ1_kUyRg:1568373979119&source=lnms&sa=X&ved=0ahUKEwjvzpmv2M3kAhXPyKQKHeyMAC4Q_AUIDSgE')]", "xpath:href"],
-        ["xpath=//div[5]/a", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "0445b2ec-d058-4860-9e99-8742d5de88cb",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Tutti",
-      "targets": [
-        ["linkText=Tutti", "linkText"],
-        ["css=.hdtb-mitem:nth-child(1) > .q", "css:finder"],
-        ["xpath=//a[contains(text(),'Tutti')]", "xpath:link"],
-        ["xpath=//div[@id='hdtb-msb-vis']/div/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/search?q=testing+search&hl=it&biw=1039&bih=722&sxsrf=ACYBGNSKp1OZaFCk6haFqBRPQEJNiQOdvQ:1568373980569&source=lnms&sa=X&ved=0ahUKEwiOkvKv2M3kAhWJy6QKHZuaCfUQ_AUITigA')]", "xpath:href"],
-        ["xpath=//div[5]/div/div/div/div/div/div/div/div/a", "xpath:position"]
-      ],
+      "command": "close",
+      "target": "",
+      "targets": [],
       "value": ""
     }]
   }, {
@@ -170,7 +119,7 @@
       "id": "0be299fa-c782-4092-9415-34493b986159",
       "comment": "",
       "command": "click",
-      "target": "linkText=Video",
+      "target": "linkText=Videos",
       "targets": [
         ["linkText=Video", "linkText"],
         ["css=.hdtb-mitem:nth-child(2) > .q", "css:finder"],
@@ -185,7 +134,7 @@
       "id": "23f48f25-2bc8-44b1-bffb-a9f9cbb650da",
       "comment": "",
       "command": "click",
-      "target": "linkText=Immagini",
+      "target": "linkText=Images",
       "targets": [
         ["linkText=Immagini", "linkText"],
         ["css=.hdtb-mitem:nth-child(3) > .q", "css:finder"],
@@ -200,7 +149,7 @@
       "id": "2e005d8d-35c9-4a24-80ea-a76fa9d083cd",
       "comment": "",
       "command": "click",
-      "target": "linkText=Notizie",
+      "target": "linkText=News",
       "targets": [
         ["linkText=Notizie", "linkText"],
         ["css=.NZmxZe:nth-child(4)", "css:finder"],
@@ -212,19 +161,10 @@
       ],
       "value": ""
     }, {
-      "id": "b29c0055-af39-49b9-8529-8b0010e86662",
-      "comment": "",
-      "command": "click",
-      "target": "css=.hdtb-mitem:nth-child(5) svg",
-      "targets": [
-        ["css=.hdtb-mitem:nth-child(5) svg", "css:finder"]
-      ],
-      "value": ""
-    }, {
       "id": "753a7f8b-1229-49c3-8f0c-ac688bf890d9",
       "comment": "",
       "command": "click",
-      "target": "linkText=Tutti",
+      "target": "linkText=All",
       "targets": [
         ["linkText=Tutti", "linkText"],
         ["css=.hdtb-mitem:nth-child(1) > .q", "css:finder"],

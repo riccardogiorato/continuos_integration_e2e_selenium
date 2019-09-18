@@ -5,8 +5,10 @@ sudo: false
 dist: trusty
 jobs:
   include:
-    - stage: test google
-      script: npm run test_google
+    - stage: test all
+      script: npm run test:e2e
+    - stage: test single
+      script: npm run test:e2e_single_file
 before_install:
   - sudo apt-get clean
   - sudo apt-get update
@@ -14,7 +16,7 @@ before_install:
   - sudo apt-get install -y libxml2-dev
   - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
   - sudo dpkg -i google-chrome-stable_current_amd64.deb
-  - npm run installglobal
+  - npm run install:e2e
 before_script:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start &
