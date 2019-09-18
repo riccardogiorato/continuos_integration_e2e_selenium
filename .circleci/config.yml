@@ -1,1 +1,31 @@
 version: 2
+jobs:
+  chrome_version:
+    docker:
+      - image: circleci/node:11-browsers
+    working_directory: ~/repo
+    steps:
+      - run: google-chrome --product-version
+  test_e2e:
+    docker:
+      - image: circleci/node:11-browsers
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: yarn install:e2e
+      - run:
+          name: set var
+          command: echo "export CHROME_VER=`google-chrome --product-version`" >> $BASH_ENV
+      - run: echo "$CHROME_VER"
+      - run: sudo webdriver-manager update --versions.chrome=$CHROME_VER
+      - run: yarn test:e2e
+      - run: yarn test:e2e_single_file
+workflows:
+  version: 2
+  build:
+    jobs:
+      - chrome_version
+      - test_e2e:
+          filters:
+            branches:
+              only: master
