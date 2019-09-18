@@ -16,7 +16,7 @@ before_install:
   - sudo apt-get install -y libxml2-dev
   - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
   - sudo dpkg -i google-chrome-stable_current_amd64.deb
-  - npm run install:e2e
+  - npm run install:e2e_travis
 before_script:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start &

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "install:e2e": "sudo npm install -g selenium-side-runner webdriver-manager",
+    "install:e2e_travis": "npm install -g selenium-side-runner webdriver-manager",
     "test:e2e": "selenium-side-runner ./tests/*.side ",
     "test:e2e_single_file": "selenium-side-runner ./tests/google.side "
   },
