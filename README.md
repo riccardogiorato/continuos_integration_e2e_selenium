@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Giorat/continuos_integration_e2e_selenium.svg?branch=master)](https://travis-ci.org/Giorat/continuos_integration_e2e_selenium)
 
-[![CircleCI](https://circleci.com/bb/riccardogioratodiana/google_selenium_circleci.svg?style=svg)](https://circleci.com/bb/riccardogioratodiana/google_selenium_circleci)
+[![CircleCI](https://circleci.com/gh/Giorat/continuos_integration_e2e_selenium.svg?style=svg)](https://circleci.com/gh/Giorat/continuos_integration_e2e_selenium)
 
 Testing out E2E test made with Selenium IDE - https://www.seleniumhq.org/selenium-ide/
 
