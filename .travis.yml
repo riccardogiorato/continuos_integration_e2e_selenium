@@ -5,6 +5,10 @@ sudo: false
 dist: trusty
 jobs:
   include:
+    - stage: check chrome1
+      script: echo $PATH
+    - stage: check chrome1
+      script: ls $PATH
     - stage: test all
       script: npm run test:e2e
     - stage: test single
@@ -23,5 +27,4 @@ before_script:
   - sleep 3
   - google-chrome --product-version
   - webdriver-manager update --versions.chrome 77.0.3865.40
-  - export PATH=/home/travis/.nvm/versions/node/v10.16.3/lib/node_modules/webdriver-manager/selenium/chromedriver_77.0.3865.40/:$PATH
-  - echo $PATH
+  - export PATH=/home/travis/.nvm/versions/node/v10.16.3/lib/node_modules/webdriver-manager/selenium/:$PATH
