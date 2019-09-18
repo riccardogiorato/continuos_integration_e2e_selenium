@@ -84,20 +84,6 @@
       ],
       "value": ""
     }, {
-      "id": "5515b12e-699d-45cf-bae1-356492c356ca",
-      "comment": "",
-      "command": "click",
-      "target": "id=logo",
-      "targets": [
-        ["id=logo", "id"],
-        ["css=#logo", "css:finder"],
-        ["xpath=//a[@id='logo']", "xpath:attributes"],
-        ["xpath=//div[@id='nav-wrap']/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/doodles')]", "xpath:href"],
-        ["xpath=//a", "xpath:position"]
-      ],
-      "value": ""
-    }, {
       "id": "e4174e83-8164-4d82-ba26-54878597ade6",
       "comment": "",
       "command": "close",
